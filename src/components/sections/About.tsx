@@ -54,7 +54,7 @@ export default function About() {
                 <div>
                   <h3 className="font-semibold">Bursa Uludağ Üniversitesi</h3>
                   <p className="text-sm text-muted-foreground">
-                    Bilgisayar Mühendisliği &bull; 2022 - Devam Ediyor
+                    Bilgisayar Mühendisliği &bull; 2023 - Devam Ediyor
                   </p>
                 </div>
               </div>
