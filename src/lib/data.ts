@@ -7,6 +7,13 @@ export interface Project {
   demo?: string;
 }
 
+export interface ExperienceRole {
+  title: string;
+  period: string;
+  description: string;
+  skills?: string[];
+}
+
 export interface Experience {
   title: string;
   organization: string;
@@ -14,6 +21,8 @@ export interface Experience {
   description: string;
   type: "education" | "work" | "project" | "community" | "security";
   skills?: string[];
+  roles?: ExperienceRole[];
+  logo?: string;
 }
 
 export interface Skill {
@@ -61,6 +70,7 @@ export const experiences: Experience[] = [
   {
     title: "Proje ve İnovasyon Departmanı Sorumlusu",
     organization: "Uludağ Yazılım Topluluğu",
+    logo: "/images/Yazilim_Toplulugu.jpg",
     period: "Ağu 2025 - Devam Ediyor",
     description:
       "Yazılım topluluğumuzda Proje ve İnovasyon Departmanı Sorumlusu olarak, yenilikçi fikirlerin geliştirilmesini yönetiyor ve proje süreçlerini liderlik ediyorum. Takım oluşturma, proje planlama, mentorluk ve yarışma hazırlıklarında aktif rol alıyorum. Amacım, öğrencilerin sadece teorik bilgi değil, aynı zamanda pratik proje deneyimi kazanmasını sağlayarak yaratıcılık ve iş birliğine odaklı üretken bir ekosistem oluşturmak.",
@@ -68,26 +78,34 @@ export const experiences: Experience[] = [
     skills: ["Takım Çalışması", "İletişim", "Proje Yönetimi"],
   },
   {
-    title: "Yazılım & Proje Takım Üyesi",
+    title: "Otonom Araç Geliştirme",
     organization: "OTAGG - Otonom Araç Geliştirme Grubu",
+    logo: "/images/otagg_logo.jpg",
     period: "Ağu 2025 - Mar 2026",
     description:
-      "OTAGG yazılım takımının bir üyesi olarak, otonom sürüş yazılımının geliştirilmesi ve entegrasyonuna katkıda bulundum. Algoritma geliştirme, veri işleme ve sistem testleri gibi sorumluluklar üstlenerek takımın yazılım altyapısını destekledim.",
+      "OTAGG bünyesinde otonom sürüş yazılımının geliştirilmesinde iki farklı rol üstlendim. Hem yazılım altyapısına hem de yapay zeka modüllerine katkı sağladım.",
     type: "project",
-    skills: ["Takım Çalışması", "Yaratıcı Problem Çözme"],
-  },
-  {
-    title: "Yapay Zeka & Bilgisayar Görüşü Takım Üyesi",
-    organization: "OTAGG - Otonom Araç Geliştirme Grubu",
-    period: "Kas 2025 - Şub 2026",
-    description:
-      "Otonom araç projesi kapsamında yapay zeka ve bilgisayar görüşü alanında çalışarak, nesne algılama ve görüntü işleme algoritmalarının geliştirilmesine katkı sağladım.",
-    type: "project",
-    skills: ["Analitik Düşünme"],
+    roles: [
+      {
+        title: "Yazılım & Proje Takım Üyesi",
+        period: "Ağu 2025 - Mar 2026",
+        description:
+          "Otonom sürüş yazılımının geliştirilmesi ve entegrasyonuna katkıda bulundum. Algoritma geliştirme, veri işleme ve sistem testleri sorumluluklarını üstlendim.",
+        skills: ["Takım Çalışması", "Yaratıcı Problem Çözme"],
+      },
+      {
+        title: "AI & Computer Vision Team Member",
+        period: "Kas 2025 - Şub 2026",
+        description:
+          "Yapay zeka ve bilgisayar görüşü alanında çalışarak, nesne algılama ve görüntü işleme algoritmalarının geliştirilmesine katkı sağladım.",
+        skills: ["Analitik Düşünme"],
+      },
+    ],
   },
   {
     title: "Kurucu Ortak",
     organization: "ChatCNC",
+    logo: "/images/ChatCnc.jpg",
     period: "May 2025 - Eki 2025",
     description:
       "CNC destekli üretim hatlarında kalite kontrolüne yardımcı olmak için tasarlanmış yapay zeka tabanlı bir chatbot konsepti geliştirdik. Sistem, kamera sensörleri ve bilgisayar görüşü kullanarak hatalı ürünleri tespit ediyor ve hata oranlarını yaklaşık %50 azaltmayı hedefliyordu. Projeyi temsilen birçok inovasyon ve teknoloji yarışmasına katıldım.",
@@ -97,6 +115,7 @@ export const experiences: Experience[] = [
   {
     title: "Siber Güvenlik Öğrencisi",
     organization: "MilliSec",
+    logo: "/images/millisec_platform_logo.jpg",
     period: "Haz 2024 - Şub 2025",
     description:
       "MilliSec bünyesinde 9 aylık yoğun bir siber güvenlik programını tamamladım. Ağ güvenliği, zafiyet analizi, penetrasyon testi ve saldırı-savunma teknikleri üzerine odaklandım. Bu eğitim sayesinde uygulamalı deneyim kazandım ve güvenlik odaklı bir problem çözme yaklaşımı geliştirdim.",
@@ -106,6 +125,7 @@ export const experiences: Experience[] = [
   {
     title: "Bilgisayar Mühendisliği Öğrencisi",
     organization: "Bursa Uludağ Üniversitesi",
+    logo: "/images/uludag_universite.png",
     period: "2023 - Devam Ediyor",
     description:
       "Algoritmalardan sistem mimarisine, ağ güvenliğinden veritabanı yönetimine kadar geniş bir yelpazede mühendislik temelleri oluşturuyorum. Teorik bilgiyi uygulamalı projelerle pekiştirerek gerçek dünya problemlerine çözüm üretiyorum.",
