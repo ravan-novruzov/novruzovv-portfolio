@@ -1,19 +1,37 @@
-import { GraduationCap, Code, Network, Globe, Shield, Cloud } from "lucide-react";
+import { MapPin, Target, Languages, Briefcase, GraduationCap, ShieldCheck, Users } from "lucide-react";
 import SectionHeading from "@/components/ui/SectionHeading";
 import ScrollReveal from "@/components/ui/ScrollReveal";
 
-const interests = [
-  { icon: Code, label: "Web Geliştirme" },
-  { icon: Network, label: "Ağ Teknolojileri" },
-  { icon: Shield, label: "Güvenlik" },
-  { icon: Cloud, label: "Bulut Bilişim" },
-  { icon: Globe, label: "Açık Kaynak" },
+const statusItems = [
+  { icon: Briefcase, label: "Durum", value: "Fırsatlara açık", highlight: true },
+  { icon: MapPin, label: "Konum", value: "Bursa, Türkiye" },
+  { icon: Target, label: "Odak", value: "Siber Güvenlik & Ağ" },
+  { icon: Languages, label: "Diller", value: "TR · EN · AZ" },
 ];
 
-const stats = [
-  { value: "3+", label: "Proje" },
-  { value: "5+", label: "Deneyim" },
-  { value: "2+", label: "Yıl Kod" },
+const values = [
+  "Güvenlik Odaklı",
+  "Problem Çözücü",
+  "Takım Oyuncusu",
+  "Sürekli Öğrenen",
+];
+
+const quickInfo = [
+  {
+    icon: GraduationCap,
+    label: "Eğitim",
+    value: "Bursa Uludağ Ü. · Bilgisayar Müh.",
+  },
+  {
+    icon: ShieldCheck,
+    label: "Siber Güvenlik",
+    value: "MilliSec · 9 ay yoğun program",
+  },
+  {
+    icon: Users,
+    label: "Topluluk",
+    value: "Uludağ Yazılım Topluluğu · Proje & İnovasyon Sorumlusu",
+  },
 ];
 
 export default function About() {
@@ -41,48 +59,78 @@ export default function About() {
                 Topluluk çalışmalarına aktif katkıda bulunarak, bilgiyi paylaşmanın
                 öğrenmenin en güçlü formu olduğuna inanıyorum.
               </p>
-            </div>
-          </ScrollReveal>
 
-          {/* Info cards */}
-          <div className="space-y-6">
-            {/* Education */}
-            <ScrollReveal delay={0.1}>
-              <div className="card-glow flex items-start gap-4 rounded-xl border border-border bg-card p-5 transition-all duration-300 hover:border-primary/30 hover:shadow-lg hover:shadow-primary/5">
-                <div className="rounded-lg bg-gradient-to-br from-primary/20 to-accent/10 p-2.5">
-                  <GraduationCap className="h-6 w-6 text-primary" />
-                </div>
-                <div>
-                  <h3 className="font-semibold">Bursa Uludağ Üniversitesi</h3>
-                  <p className="text-sm text-muted-foreground">
-                    Bilgisayar Mühendisliği &bull; 2023 - Devam Ediyor
-                  </p>
-                </div>
-              </div>
-            </ScrollReveal>
-
-            {/* Interests */}
-            <ScrollReveal delay={0.2}>
-              <div className="flex flex-wrap gap-3">
-                {interests.map(({ icon: Icon, label }) => (
+              {/* Values badges */}
+              <div className="flex flex-wrap gap-2 pt-2">
+                {values.map((value) => (
                   <span
-                    key={label}
-                    className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-4 py-2 text-sm font-medium transition-all duration-300 hover:border-primary/30 hover:text-primary"
+                    key={value}
+                    className="rounded-full border border-primary/20 bg-primary/5 px-3 py-1 text-xs font-medium text-primary"
                   >
-                    <Icon className="h-4 w-4 text-primary" />
-                    {label}
+                    {value}
                   </span>
                 ))}
               </div>
+            </div>
+          </ScrollReveal>
+
+          {/* Right column: Status & Info */}
+          <div className="space-y-5">
+            {/* Status card */}
+            <ScrollReveal delay={0.1}>
+              <div className="card-glow rounded-xl border border-border bg-card p-5 transition-all duration-300 hover:border-primary/30 hover:shadow-lg hover:shadow-primary/5">
+                <div className="mb-4 flex items-center gap-2">
+                  <span className="relative flex h-2 w-2">
+                    <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-400 opacity-75" />
+                    <span className="relative inline-flex h-2 w-2 rounded-full bg-green-500" />
+                  </span>
+                  <span className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
+                    Şu Anda
+                  </span>
+                </div>
+                <div className="grid grid-cols-2 gap-4">
+                  {statusItems.map(({ icon: Icon, label, value, highlight }) => (
+                    <div key={label} className="flex items-start gap-2.5">
+                      <div className="mt-0.5 rounded-md bg-gradient-to-br from-primary/20 to-accent/10 p-1.5">
+                        <Icon className="h-3.5 w-3.5 text-primary" />
+                      </div>
+                      <div className="min-w-0">
+                        <p className="text-[10px] font-medium uppercase tracking-wider text-muted-foreground">
+                          {label}
+                        </p>
+                        <p
+                          className={`text-sm font-semibold ${
+                            highlight ? "text-primary" : "text-foreground"
+                          }`}
+                        >
+                          {value}
+                        </p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
             </ScrollReveal>
 
-            {/* Stats */}
-            <ScrollReveal delay={0.3}>
-              <div className="flex gap-8">
-                {stats.map(({ value, label }) => (
-                  <div key={label} className="text-center">
-                    <p className="text-3xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">{value}</p>
-                    <p className="text-sm text-muted-foreground">{label}</p>
+            {/* Quick info grid */}
+            <ScrollReveal delay={0.2}>
+              <div className="space-y-3">
+                {quickInfo.map(({ icon: Icon, label, value }) => (
+                  <div
+                    key={label}
+                    className="group flex items-start gap-3 rounded-xl border border-border bg-card p-4 transition-all duration-300 hover:border-primary/30 hover:shadow-md hover:shadow-primary/5"
+                  >
+                    <div className="rounded-lg bg-gradient-to-br from-primary/20 to-accent/10 p-2">
+                      <Icon className="h-4 w-4 text-primary" />
+                    </div>
+                    <div className="flex-1">
+                      <p className="text-[10px] font-medium uppercase tracking-wider text-muted-foreground">
+                        {label}
+                      </p>
+                      <p className="text-sm font-semibold text-foreground">
+                        {value}
+                      </p>
+                    </div>
                   </div>
                 ))}
               </div>
