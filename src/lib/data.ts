@@ -106,7 +106,7 @@ export const experiences: Experience[] = [
   {
     title: "Bilgisayar Mühendisliği Öğrencisi",
     organization: "Bursa Uludağ Üniversitesi",
-    period: "2022 - Devam Ediyor",
+    period: "2023 - Devam Ediyor",
     description:
       "Algoritmalardan sistem mimarisine, ağ güvenliğinden veritabanı yönetimine kadar geniş bir yelpazede mühendislik temelleri oluşturuyorum. Teorik bilgiyi uygulamalı projelerle pekiştirerek gerçek dünya problemlerine çözüm üretiyorum.",
     type: "education",

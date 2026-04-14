@@ -11,8 +11,9 @@ const interests = [
 ];
 
 const stats = [
-  { value: "2+", label: "Proje" },
-  { value: "300+", label: "Kullanıcı" },
+  { value: "3+", label: "Proje" },
+  { value: "5+", label: "Deneyim" },
+  { value: "2+", label: "Yıl Kod" },
 ];
 
 export default function About() {
