@@ -64,13 +64,13 @@ export default function Achievements() {
                       {/* Gradient overlay for text legibility */}
                       <div className="absolute inset-0 bg-gradient-to-t from-card via-card/40 to-transparent" />
 
-                      {/* Trophy badge on image (top-left) */}
-                      <div className={`absolute left-4 top-4 rounded-xl bg-gradient-to-br ${style.gradient} p-2.5 shadow-lg ${style.glow}`}>
+                      {/* Trophy badge on image (bottom-left) */}
+                      <div className={`absolute bottom-4 left-4 rounded-xl bg-gradient-to-br ${style.gradient} p-2.5 shadow-lg ${style.glow}`}>
                         <Icon className="h-5 w-5 text-white" strokeWidth={2.5} />
                       </div>
 
-                      {/* Rank label on image (top-right) */}
-                      <div className="absolute right-4 top-4 rounded-full border border-white/20 bg-black/40 px-3 py-1 backdrop-blur-md">
+                      {/* Rank label on image (bottom-right) */}
+                      <div className="absolute bottom-4 right-4 rounded-full border border-white/20 bg-black/40 px-3 py-1 backdrop-blur-md">
                         <p className={`text-[10px] font-bold tracking-widest bg-gradient-to-r ${style.gradient} bg-clip-text text-transparent`}>
                           {style.label}
                         </p>
