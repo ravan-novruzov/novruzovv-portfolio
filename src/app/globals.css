@@ -136,6 +136,21 @@ body {
   animation: skill-fill 1s ease-out forwards;
 }
 
+/* Terminal blinking cursor */
+@keyframes cursor-blink {
+  0%, 49% { opacity: 1; }
+  50%, 100% { opacity: 0; }
+}
+
+.terminal-cursor {
+  display: inline-block;
+  animation: cursor-blink 1.1s step-end infinite;
+}
+
+.font-mono {
+  font-family: var(--font-mono, "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace);
+}
+
 /* Subtle noise texture */
 .noise-bg::after {
   content: "";
