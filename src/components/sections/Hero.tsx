@@ -87,7 +87,7 @@ export default function Hero() {
             className="group inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/5 px-4 py-1.5 text-sm font-medium text-primary backdrop-blur-sm transition-all duration-300 hover:border-primary/50 hover:bg-primary/10 hover:-translate-y-0.5"
           >
             <span className="h-2 w-2 rounded-full bg-primary" />
-            Siber Güvenlik Uzmanı Adayı
+            Siber Güvenlik & Ağ Tutkunu
           </a>
         </motion.div>
 

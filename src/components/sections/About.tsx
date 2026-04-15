@@ -3,7 +3,7 @@ import SectionHeading from "@/components/ui/SectionHeading";
 import ScrollReveal from "@/components/ui/ScrollReveal";
 
 const statusItems = [
-  { icon: Briefcase, label: "Durum", value: "Fırsatlara açık", highlight: true },
+  { icon: Briefcase, label: "Durum", value: "Staj fırsatlarına açık", highlight: true },
   { icon: MapPin, label: "Konum", value: "Bursa, Türkiye" },
   { icon: Target, label: "Odak", value: "Siber Güvenlik & Ağ" },
   { icon: Languages, label: "Diller", value: "TR · EN · AZ" },
