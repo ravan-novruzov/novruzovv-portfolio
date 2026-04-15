@@ -37,15 +37,10 @@ export interface Achievement {
   image?: string;
 }
 
-export interface Skill {
-  name: string;
-  level: number;
-}
-
 export interface SkillCategory {
   name: string;
   icon: string;
-  skills: Skill[];
+  skills: string[];
 }
 
 export const projects: Project[] = [
@@ -173,78 +168,36 @@ export const achievements: Achievement[] = [
 
 export const skillCategories: SkillCategory[] = [
   {
-    name: "Siber Güvenlik",
+    name: "Siber Güvenlik & Ağ",
     icon: "shield",
     skills: [
-      { name: "Penetrasyon Testi", level: 75 },
-      { name: "Zafiyet Analizi", level: 72 },
-      { name: "Saldırı-Savunma Teknikleri", level: 70 },
-      { name: "Güvenlik Denetimi", level: 68 },
-      { name: "OWASP Top 10", level: 72 },
+      "Penetrasyon Testi",
+      "Zafiyet Analizi",
+      "OWASP Top 10",
+      "TCP/IP",
+      "DNS / DHCP",
+      "Active Directory",
+      "Firewall & IDS/IPS",
     ],
   },
   {
-    name: "Ağ Teknolojileri",
-    icon: "network",
-    skills: [
-      { name: "TCP/IP", level: 80 },
-      { name: "DNS / DHCP", level: 78 },
-      { name: "VPN & Tünelleme", level: 72 },
-      { name: "Ağ Topolojileri", level: 75 },
-      { name: "Active Directory", level: 70 },
-      { name: "Firewall & IDS/IPS", level: 68 },
-    ],
-  },
-  {
-    name: "Programlama Dilleri",
+    name: "Programlama",
     icon: "code",
-    skills: [
-      { name: "JavaScript", level: 85 },
-      { name: "TypeScript", level: 75 },
-      { name: "Python", level: 70 },
-      { name: "C", level: 65 },
-      { name: "SQL", level: 75 },
-    ],
+    skills: ["JavaScript", "TypeScript", "Python", "C", "SQL"],
   },
   {
-    name: "Frontend",
+    name: "Web Geliştirme",
     icon: "layout",
-    skills: [
-      { name: "React", level: 80 },
-      { name: "Next.js", level: 75 },
-      { name: "Tailwind CSS", level: 85 },
-      { name: "HTML/CSS", level: 90 },
-    ],
-  },
-  {
-    name: "Backend",
-    icon: "server",
-    skills: [
-      { name: "Node.js", level: 80 },
-      { name: "Express.js", level: 78 },
-    ],
+    skills: ["React", "Next.js", "Tailwind CSS", "Node.js", "Express.js"],
   },
   {
     name: "Veritabanı",
     icon: "database",
-    skills: [
-      { name: "PostgreSQL", level: 72 },
-      { name: "MySQL", level: 68 },
-      { name: "MongoDB", level: 65 },
-    ],
+    skills: ["PostgreSQL", "MySQL", "MongoDB"],
   },
   {
     name: "Araçlar & Platformlar",
     icon: "wrench",
-    skills: [
-      { name: "Git", level: 82 },
-      { name: "GitHub", level: 85 },
-      { name: "Linux", level: 75 },
-      { name: "Wireshark", level: 72 },
-      { name: "Packet Tracer", level: 70 },
-      { name: "Ubuntu", level: 72 },
-      { name: "Windows Server", level: 70 },
-      { name: "VS Code", level: 90 },
-    ],
+    skills: ["Git", "Linux", "Wireshark", "Packet Tracer", "Windows Server"],
   },
 ];
