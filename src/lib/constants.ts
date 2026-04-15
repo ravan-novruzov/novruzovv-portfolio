@@ -2,6 +2,7 @@ export const NAV_LINKS = [
   { label: "Hakkımda", href: "#hakkimda" },
   { label: "Yetenekler", href: "#yetenekler" },
   { label: "Projeler", href: "#projeler" },
+  { label: "Başarılar", href: "#basarilar" },
   { label: "Deneyim", href: "#deneyim" },
   { label: "İletişim", href: "#iletisim" },
 ];

@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowDown, ArrowRight } from "lucide-react";
+import { ArrowDown, ArrowRight, Trophy } from "lucide-react";
 import { GithubIcon, LinkedinIcon } from "@/components/ui/Icons";
 import { SOCIAL_LINKS } from "@/lib/constants";
 
@@ -70,6 +70,26 @@ export default function Hero() {
           tutkulu bir mühendis adayı. Karmaşık problemleri zarif
           çözümlere dönüştürmeyi seviyorum.
         </motion.p>
+
+        {/* Achievement badges */}
+        <motion.div variants={item} className="mt-6 flex flex-wrap items-center justify-center gap-2">
+          <a
+            href="#basarilar"
+            className="group inline-flex items-center gap-2 rounded-full border border-amber-500/30 bg-gradient-to-r from-amber-500/10 to-orange-500/5 px-4 py-1.5 text-sm font-medium backdrop-blur-sm transition-all duration-300 hover:border-amber-500/50 hover:shadow-lg hover:shadow-amber-500/10 hover:-translate-y-0.5"
+          >
+            <Trophy className="h-4 w-4 text-amber-500" />
+            <span className="bg-gradient-to-r from-amber-400 to-orange-500 bg-clip-text text-transparent font-semibold">
+              2x Hackathon Ödüllü
+            </span>
+          </a>
+          <a
+            href="#deneyim"
+            className="group inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/5 px-4 py-1.5 text-sm font-medium text-primary backdrop-blur-sm transition-all duration-300 hover:border-primary/50 hover:bg-primary/10 hover:-translate-y-0.5"
+          >
+            <span className="h-2 w-2 rounded-full bg-primary" />
+            Siber Güvenlik Uzmanı Adayı
+          </a>
+        </motion.div>
 
         {/* Social links with prominent LinkedIn */}
         <motion.div variants={item} className="mt-8 flex items-center justify-center gap-4">
