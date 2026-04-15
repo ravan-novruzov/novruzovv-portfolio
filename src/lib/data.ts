@@ -167,6 +167,7 @@ export const achievements: Achievement[] = [
     description:
       "Hackathon kapsamında verilen probleme uygun bir çözüm geliştirerek; teknik, görsel ve stratejik açıdan güçlü bir proje ortaya koyduk. Projemiz yapay zeka entegrasyonu, profesyonel arayüz tasarımı, etkili sunum ve güçlü takım çalışması ile öne çıktı.",
     linkedin: "https://www.linkedin.com/feed/update/urn:li:activity:7332711040377368576/",
+    image: "/images/achievments/productivity_hackathon.jpg",
   },
 ];
 
