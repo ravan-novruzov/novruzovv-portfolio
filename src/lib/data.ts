@@ -34,6 +34,7 @@ export interface Achievement {
   description: string;
   team?: string[];
   linkedin?: string;
+  image?: string;
 }
 
 export interface Skill {
@@ -146,16 +147,6 @@ export const experiences: Experience[] = [
 
 export const achievements: Achievement[] = [
   {
-    title: "Verimlilik Hackathonu",
-    rank: 2,
-    rankLabel: "2. Sıra",
-    organization: "BUSİAD - Bursa Sanayicileri ve İş İnsanları Derneği",
-    date: "2025",
-    description:
-      "Hackathon kapsamında verilen probleme uygun bir çözüm geliştirerek; teknik, görsel ve stratejik açıdan güçlü bir proje ortaya koyduk. Projemiz yapay zeka entegrasyonu, profesyonel arayüz tasarımı, etkili sunum ve güçlü takım çalışması ile öne çıktı.",
-    linkedin: "https://www.linkedin.com/in/ravan-novruzov-8260772a5/",
-  },
-  {
     title: "Yapay Zeka Hackathonu",
     rank: 3,
     rankLabel: "3. Sıra",
@@ -164,7 +155,18 @@ export const achievements: Achievement[] = [
     description:
       "Kısa sürede özgün ve uygulanabilir yapay zeka tabanlı bir çözüm geliştirdik. Nilüfer Belediyesi sponsorluğunda gerçekleşen etkinlikte, hızlı prototipleme ve problem çözme becerilerimizi sergiledik.",
     team: ["Enes Altunbaş", "Oğuzhan Hekimoğlu"],
-    linkedin: "https://www.linkedin.com/in/ravan-novruzov-8260772a5/",
+    linkedin: "https://www.linkedin.com/feed/update/urn:li:activity:7411801958698737664/",
+    image: "/images/achievments/AI_Hackathon.jpg",
+  },
+  {
+    title: "Verimlilik Hackathonu",
+    rank: 2,
+    rankLabel: "2. Sıra",
+    organization: "BUSİAD - Bursa Sanayicileri ve İş İnsanları Derneği",
+    date: "2025",
+    description:
+      "Hackathon kapsamında verilen probleme uygun bir çözüm geliştirerek; teknik, görsel ve stratejik açıdan güçlü bir proje ortaya koyduk. Projemiz yapay zeka entegrasyonu, profesyonel arayüz tasarımı, etkili sunum ve güçlü takım çalışması ile öne çıktı.",
+    linkedin: "https://www.linkedin.com/feed/update/urn:li:activity:7332711040377368576/",
   },
 ];
 
