@@ -241,4 +241,23 @@ export const communityEvents: CommunityEvent[] = [
     ],
     linkedin: "https://www.linkedin.com/feed/update/urn:li:activity:7391006331861766144/",
   },
+  {
+    title: "IDEA CAMP — Fikir Üretenler Kampı! 🏕️",
+    date: "8 Kasım 2025",
+    description:
+      "Uludağ Yazılım Topluluğu olarak bu dönem düzenlediğimiz IdeaCamp etkinliğinde; 2 gece 3 gün boyunca teknoloji, inovasyon ve yaratıcılığı aynı çatı altında buluşturduk! 🌿💻",
+    images: [
+      "/images/events/camp1.jpg",
+      "/images/events/camp2.jpg",
+      "/images/events/camp3.jpg",
+      "/images/events/camp4.jpg",
+      "/images/events/camp5.jpg",
+      "/images/events/camp6.jpg",
+      "/images/events/camp7.jpg",
+      "/images/events/camp8.jpg",
+      "/images/events/camp9.jpg",
+      "/images/events/camp10.jpg",
+    ],
+    linkedin: "https://www.linkedin.com/posts/uludagdev_ideacamp-uludaafbyazaftlaftmtopluluafbu-ideathon-ugcPost-7394086993691037696-wTiB?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEmDut4BnPFl-UhvRxpAqRt42BqT32OkLgo",
+  },
 ];
