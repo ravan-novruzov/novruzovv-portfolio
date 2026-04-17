@@ -43,6 +43,14 @@ export interface SkillCategory {
   skills: string[];
 }
 
+export interface CommunityEvent {
+  title: string;
+  date: string;
+  description: string;
+  images: string[];
+  linkedin?: string;
+}
+
 export const projects: Project[] = [
   {
     title: "QR Etkinlik Yönetim Sistemi",
@@ -199,5 +207,21 @@ export const skillCategories: SkillCategory[] = [
     name: "Araçlar & Platformlar",
     icon: "wrench",
     skills: ["Git", "Linux", "Wireshark", "Packet Tracer", "Windows Server"],
+  },
+];
+
+export const communityEvents: CommunityEvent[] = [
+  {
+    title: "Startech ⭐",
+    date: "28 Mart 2026",
+    description:
+      "Startech 2026 — Birlikte yarattığımız bir deneyimdi! Uludağ Yazılım Topluluğu olarak düzenlediğimiz bu etkinlikte katılımcıları bir araya getirerek unutulmaz anlar yaşadık.",
+    images: [
+      "/images/events/Startech1.jpg",
+      "/images/events/Startech2.jpg",
+      "/images/events/Startech3.jpg",
+      "/images/events/Startech4.jpg",
+    ],
+    linkedin: "https://www.linkedin.com/feed/update/urn:li:activity:7444402547466964992/",
   },
 ];

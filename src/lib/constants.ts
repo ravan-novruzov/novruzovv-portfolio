@@ -4,6 +4,7 @@ export const NAV_LINKS = [
   { label: "Projeler", href: "#projeler" },
   { label: "Başarılar", href: "#basarilar" },
   { label: "Deneyim", href: "#deneyim" },
+  { label: "Etkinlikler", href: "#etkinlikler" },
   { label: "İletişim", href: "#iletisim" },
 ];
 
