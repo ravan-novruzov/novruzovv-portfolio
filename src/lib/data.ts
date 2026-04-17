@@ -260,4 +260,20 @@ export const communityEvents: CommunityEvent[] = [
     ],
     linkedin: "https://www.linkedin.com/posts/uludagdev_ideacamp-uludaafbyazaftlaftmtopluluafbu-ideathon-ugcPost-7394086993691037696-wTiB?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEmDut4BnPFl-UhvRxpAqRt42BqT32OkLgo",
   },
+  {
+    title: "🎙 OpenTalks | Sektör–Öğrenci Buluşması",
+    date: "8 Ocak 2026",
+    description:
+      "Uludağ Yazılım Topluluğu olarak düzenlediğimiz OpenTalks etkinliğimizi başarıyla gerçekleştirdik. Bu etkinlikte amacımız; üyelerimizi sektörle doğrudan buluşturarak gerçek deneyimlerin, kariyer yolculuklarının ve sektörel bakış açılarının paylaşıldığı verimli bir ortam oluşturmaktı.",
+    images: [
+      "/images/events/turkcell1.jpg",
+      "/images/events/turkcell2.jpg",
+      "/images/events/turkcell3.jpg",
+      "/images/events/turkcell4.jpg",
+      "/images/events/turkcell5.jpg",
+      "/images/events/turkcell6.jpg",
+      "/images/events/turkcell7.jpg",
+    ],
+    linkedin: "https://www.linkedin.com/posts/ravan-novruzov-8260772a5_opentalks-yazaftlaftmtopluluafbu-sektaemrbuluagnmasaft-activity-7415285431518269440-mpFp?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEmDut4BnPFl-UhvRxpAqRt42BqT32OkLgo",
+  },
 ];
