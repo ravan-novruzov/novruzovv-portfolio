@@ -45,46 +45,26 @@ export default function Hero() {
           Yazılım & Ağ Mühendisliği
         </motion.div>
 
-        <motion.div
+        <motion.h1
           variants={item}
-          className="mx-auto mt-4 max-w-xl rounded-xl border border-border bg-card/60 p-5 text-left font-mono shadow-lg shadow-primary/5 backdrop-blur-sm sm:p-6"
+          className="text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl"
         >
-          {/* Terminal top bar */}
-          <div className="mb-3 flex items-center gap-1.5">
-            <span className="h-2.5 w-2.5 rounded-full bg-red-500/70" />
-            <span className="h-2.5 w-2.5 rounded-full bg-yellow-500/70" />
-            <span className="h-2.5 w-2.5 rounded-full bg-green-500/70" />
-            <span className="ml-2 text-[10px] uppercase tracking-wider text-muted-foreground">
-              ~/portfolio — zsh
-            </span>
-          </div>
-
-          {/* Prompt line */}
-          <p className="text-sm text-muted-foreground sm:text-base">
-            <span className="text-primary">$</span> whoami
-          </p>
-
-          {/* Name line */}
-          <h1 className="mt-1 text-2xl font-bold tracking-tight text-foreground sm:text-3xl lg:text-4xl">
-            <span className="text-accent">{">"}</span>{" "}
-            <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-              Ravan Novruzov
-            </span>
-            <span className="terminal-cursor ml-1 text-primary">_</span>
-          </h1>
-
-          {/* Role line */}
-          <p className="mt-2 text-sm text-muted-foreground sm:text-base">
-            <span className="text-primary">$</span> echo $ROLE
-          </p>
-          <p className="text-base text-foreground sm:text-lg">
-            Bilgisayar Mühendisliği Öğrencisi
-          </p>
-        </motion.div>
+          Ravan{" "}
+          <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+            Novruzov
+          </span>
+        </motion.h1>
 
         <motion.p
           variants={item}
-          className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-secondary sm:text-lg"
+          className="mt-3 text-lg text-muted-foreground sm:text-xl"
+        >
+          Bilgisayar Mühendisliği Öğrencisi
+        </motion.p>
+
+        <motion.p
+          variants={item}
+          className="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-secondary sm:text-lg"
         >
           Bulut bilişim, ağ güvenliği ve sistem mimarisi alanlarında
           tutkulu bir mühendis adayı. Karmaşık problemleri zarif
