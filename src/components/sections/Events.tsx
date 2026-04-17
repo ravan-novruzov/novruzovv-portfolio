@@ -1,10 +1,74 @@
 "use client";
 
+import { useState } from "react";
 import Image from "next/image";
-import { ExternalLink, Calendar } from "lucide-react";
+import { ExternalLink, Calendar, ChevronLeft, ChevronRight } from "lucide-react";
 import { communityEvents } from "@/lib/data";
 import SectionHeading from "@/components/ui/SectionHeading";
 import ScrollReveal from "@/components/ui/ScrollReveal";
+
+function ImageCarousel({ images, title }: { images: string[]; title: string }) {
+  const [current, setCurrent] = useState(0);
+
+  const prev = () => setCurrent((c) => (c - 1 + images.length) % images.length);
+  const next = () => setCurrent((c) => (c + 1) % images.length);
+
+  return (
+    <div className="relative aspect-[16/9] w-full overflow-hidden">
+      {/* Photos */}
+      {images.map((src, i) => (
+        <div
+          key={i}
+          className={`absolute inset-0 transition-opacity duration-500 ${
+            i === current ? "opacity-100" : "opacity-0 pointer-events-none"
+          }`}
+        >
+          <Image
+            src={src}
+            alt={`${title} - ${i + 1}`}
+            fill
+            sizes="(max-width: 768px) 100vw, 50vw"
+            className="object-cover"
+          />
+        </div>
+      ))}
+
+      {/* Arrows — only show if more than 1 photo */}
+      {images.length > 1 && (
+        <>
+          <button
+            onClick={prev}
+            className="absolute left-3 top-1/2 -translate-y-1/2 rounded-full border border-white/20 bg-black/40 p-1.5 text-white backdrop-blur-sm transition-all hover:bg-black/60"
+            aria-label="Önceki"
+          >
+            <ChevronLeft className="h-4 w-4" />
+          </button>
+          <button
+            onClick={next}
+            className="absolute right-3 top-1/2 -translate-y-1/2 rounded-full border border-white/20 bg-black/40 p-1.5 text-white backdrop-blur-sm transition-all hover:bg-black/60"
+            aria-label="Sonraki"
+          >
+            <ChevronRight className="h-4 w-4" />
+          </button>
+
+          {/* Dots */}
+          <div className="absolute bottom-3 left-1/2 flex -translate-x-1/2 gap-1.5">
+            {images.map((_, i) => (
+              <button
+                key={i}
+                onClick={() => setCurrent(i)}
+                className={`h-1.5 rounded-full transition-all duration-300 ${
+                  i === current ? "w-4 bg-white" : "w-1.5 bg-white/50"
+                }`}
+                aria-label={`Fotoğraf ${i + 1}`}
+              />
+            ))}
+          </div>
+        </>
+      )}
+    </div>
+  );
+}
 
 export default function Events() {
   return (
@@ -18,34 +82,15 @@ export default function Events() {
         <div className="grid gap-8 md:grid-cols-2">
           {communityEvents.map((event, index) => (
             <ScrollReveal key={event.title} delay={index * 0.15}>
-              <div className="card-glow group flex h-full flex-col overflow-hidden rounded-2xl border border-border bg-card transition-all duration-300 hover:border-primary/30 hover:shadow-xl hover:shadow-primary/5 hover:-translate-y-1"
+              <div
+                className="card-glow group flex h-full flex-col overflow-hidden rounded-2xl border border-border bg-card transition-all duration-300 hover:border-primary/30 hover:shadow-xl hover:shadow-primary/5 hover:-translate-y-1"
                 onMouseMove={(e) => {
                   const rect = e.currentTarget.getBoundingClientRect();
                   e.currentTarget.style.setProperty("--mouse-x", `${e.clientX - rect.left}px`);
                   e.currentTarget.style.setProperty("--mouse-y", `${e.clientY - rect.top}px`);
                 }}
               >
-                {/* Horizontal scrollable photo strip */}
-                <div className="relative">
-                  <div className="flex gap-1.5 overflow-x-auto p-1.5 scrollbar-hide snap-x snap-mandatory">
-                    {event.images.map((src, i) => (
-                      <div
-                        key={i}
-                        className="relative aspect-[4/3] w-64 shrink-0 snap-start overflow-hidden rounded-xl"
-                      >
-                        <Image
-                          src={src}
-                          alt={`${event.title} - ${i + 1}`}
-                          fill
-                          sizes="256px"
-                          className="object-cover transition-transform duration-500 group-hover:scale-105"
-                        />
-                      </div>
-                    ))}
-                  </div>
-                  {/* Fade hint on right edge */}
-                  <div className="pointer-events-none absolute right-0 top-0 h-full w-10 bg-gradient-to-l from-card to-transparent" />
-                </div>
+                <ImageCarousel images={event.images} title={event.title} />
 
                 {/* Content */}
                 <div className="flex flex-1 flex-col p-5">
