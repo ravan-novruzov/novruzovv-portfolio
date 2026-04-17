@@ -7,7 +7,7 @@ import { communityEvents } from "@/lib/data";
 import SectionHeading from "@/components/ui/SectionHeading";
 import ScrollReveal from "@/components/ui/ScrollReveal";
 
-function ImageCarousel({ images, title }: { images: string[]; title: string }) {
+function ImageCarousel({ images, title, containImages = [] }: { images: string[]; title: string; containImages?: string[] }) {
   const [current, setCurrent] = useState(0);
 
   const prev = () => setCurrent((c) => (c - 1 + images.length) % images.length);
@@ -28,7 +28,7 @@ function ImageCarousel({ images, title }: { images: string[]; title: string }) {
             alt={`${title} - ${i + 1}`}
             fill
             sizes="(max-width: 768px) 100vw, 50vw"
-            className="object-cover"
+            className={containImages.includes(src) ? "object-contain" : "object-cover"}
           />
         </div>
       ))}
@@ -90,7 +90,7 @@ export default function Events() {
                   e.currentTarget.style.setProperty("--mouse-y", `${e.clientY - rect.top}px`);
                 }}
               >
-                <ImageCarousel images={event.images} title={event.title} />
+                <ImageCarousel images={event.images} title={event.title} containImages={event.containImages} />
 
                 {/* Content */}
                 <div className="flex flex-1 flex-col p-5">

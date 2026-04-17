@@ -48,6 +48,7 @@ export interface CommunityEvent {
   date: string;
   description: string;
   images: string[];
+  containImages?: string[];
   linkedin?: string;
 }
 
@@ -222,6 +223,22 @@ export const communityEvents: CommunityEvent[] = [
       "/images/events/Startech3.jpg",
       "/images/events/Startech4.jpg",
     ],
+    containImages: ["/images/events/Startech4.jpg"],
     linkedin: "https://www.linkedin.com/feed/update/urn:li:activity:7444402547466964992/",
+  },
+  {
+    title: "UYT Case Study Eğitimi 📚",
+    date: "31 Ekim 2025",
+    description:
+      "🎓 Uludağ Yazılım Topluluğu olarak ilk Case Study Eğitimimizi gerçekleştirdik! Gerçek dünya problemlerini analiz ettiğimiz bu eğitimde üyelerimizle birlikte değerli deneyimler edindik.",
+    images: [
+      "/images/events/CaseStudy1.jpg",
+      "/images/events/CaseStudy2.jpg",
+      "/images/events/CaseStudy3.jpg",
+      "/images/events/CaseStudy4.jpg",
+      "/images/events/CaseStudy5.jpg",
+      "/images/events/CaseStudy6.jpg",
+    ],
+    linkedin: "https://www.linkedin.com/feed/update/urn:li:activity:7391006331861766144/",
   },
 ];
