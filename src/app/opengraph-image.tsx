@@ -73,23 +73,16 @@ export default async function Image() {
             gap: 10,
             padding: "10px 24px",
             borderRadius: 999,
-            border: "1px solid rgba(129, 140, 248, 0.4)",
-            background: "rgba(129, 140, 248, 0.1)",
-            color: "#a5b4fc",
+            border: "1px solid rgba(245, 158, 11, 0.4)",
+            background:
+              "linear-gradient(90deg, rgba(245, 158, 11, 0.15), rgba(249, 115, 22, 0.08))",
+            color: "#fbbf24",
             fontSize: 22,
-            fontWeight: 500,
+            fontWeight: 600,
             marginBottom: 32,
           }}
         >
-          <div
-            style={{
-              width: 10,
-              height: 10,
-              background: "#818cf8",
-              borderRadius: "50%",
-            }}
-          />
-          Yazılım & Ağ Mühendisliği
+          🏆 2x Hackathon Ödüllü
         </div>
 
         {/* Name */}
