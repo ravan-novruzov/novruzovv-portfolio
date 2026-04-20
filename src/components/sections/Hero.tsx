@@ -37,14 +37,6 @@ export default function Hero() {
         animate="show"
         className="relative z-10 mx-auto max-w-4xl text-center"
       >
-        <motion.div
-          variants={item}
-          className="mx-auto mb-6 inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/5 px-4 py-1.5 text-sm font-medium text-primary backdrop-blur-sm"
-        >
-          <span className="h-2 w-2 rounded-full bg-primary animate-pulse" />
-          Yazılım & Ağ Mühendisliği
-        </motion.div>
-
         <motion.h1
           variants={item}
           className="text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl"
