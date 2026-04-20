@@ -53,6 +53,7 @@ export default function Hero() {
           <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
             Novruzov
           </span>
+          <span className="sr-only"> (Rəvan Novruzov, Revan Novruzov)</span>
         </motion.h1>
 
         <motion.p
