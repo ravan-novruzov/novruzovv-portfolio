@@ -54,6 +54,15 @@ export interface CommunityEvent {
 
 export const projects: Project[] = [
   {
+    title: "SmartWasteAI — Akıllı Atık Yönetimi ve Rota Optimizasyonu",
+    description:
+      "Nilüfer Hackathon 2025 kapsamında geliştirdiğimiz, belediye araçlarının GPS verilerinden çöp konteynırı lokasyonlarını tespit eden ve mahalle bazlı optimize rotalar üreten sistem. Python ile üç modülden oluşuyor: veri temizleme, Nearest Neighbor algoritmasıyla rota optimizasyonu ve Folium ile interaktif harita görselleştirme. Sonuç olarak araç tiplerine göre ayrılmış, mahalle mahalle renklendirilmiş toplama güzergahları interaktif bir HTML haritada sunuluyor.",
+    challenge:
+      "Ham GPS verilerinden gerçek \"konteynır boşaltma\" olaylarını doğru tespit etmek (30sn-10dk arası duraklama kriteri), mükerrer kayıtları tekilleştirmek ve Nearest Neighbor algoritmasıyla araçların mahalle içinde gereksiz git-gel yapmasını önleyen optimize rotalar üretmek projenin en kritik mühendislik kararlarıydı.",
+    tags: ["Python", "Pandas", "NumPy", "Folium", "Nearest Neighbor", "GPS"],
+    github: "https://github.com/ravan-novruzov/SmartWasteAI",
+  },
+  {
     title: "QR Etkinlik Yönetim Sistemi",
     description:
       "Startech 2026 etkinliği için Project Lead olarak geliştirdiğim, 300+ katılımcılı QR tabanlı gamifikasyon platformu. TOTP tabanlı dinamik QR kodlarla güvenli puan transferi, oda yönetimi, canlı liderlik tablosu, mentor onay mekanizması ve rol bazlı erişim kontrolü (admin, mentor, katılımcı, görevli) içeriyor. PWA desteğiyle mobil cihazlarda uygulama olarak çalışıyor ve Türkçe/İngilizce çoklu dil desteği sunuyor.",
