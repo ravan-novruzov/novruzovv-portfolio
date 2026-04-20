@@ -285,4 +285,16 @@ export const communityEvents: CommunityEvent[] = [
     ],
     linkedin: "https://www.linkedin.com/posts/ravan-novruzov-8260772a5_opentalks-yazaftlaftmtopluluafbu-sektaemrbuluagnmasaft-activity-7415285431518269440-mpFp?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEmDut4BnPFl-UhvRxpAqRt42BqT32OkLgo",
   },
+  {
+    title: "🐍 PyCamp | Python Temelleri 1",
+    date: "7 Aralık 2025",
+    description:
+      "Uludağ Yazılım Topluluğu olarak PyCamp serimizin ikinci ve temel aşaması olan 'Python Temelleri 1' oturumunu başarıyla gerçekleştirdik. Üyelerimizle birlikte Python'un temel yapı taşlarını pratik örneklerle işledik.",
+    images: [
+      "/images/events/python1.jpg",
+      "/images/events/python2.jpg",
+      "/images/events/python3.jpg",
+    ],
+    linkedin: "https://www.linkedin.com/posts/uludagdev_uluda%C4%9F-yaz%C4%B1l%C4%B1m-toplulu%C4%9Fu-olarak-pycamp-serimizin-ugcPost-7404492834852192256-DsCm?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEmDut4BnPFl-UhvRxpAqRt42BqT32OkLgo",
+  },
 ];
