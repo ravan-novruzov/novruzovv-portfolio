@@ -67,7 +67,7 @@ export default function Hero() {
           variants={item}
           className="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-secondary sm:text-lg"
         >
-          Bulut bilişim, ağ güvenliği ve sistem mimarisi alanlarında
+          Ağ güvenliği, sistem mimarisi ve siber güvenlik alanlarında
           tutkulu bir mühendis adayı. Karmaşık problemleri zarif
           çözümlere dönüştürmeyi seviyorum.
         </motion.p>

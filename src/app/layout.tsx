@@ -18,7 +18,7 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   title: "Ravan Novruzov (Rəvan Novruzov) | Bilgisayar Mühendisi",
   description:
-    "Ravan Novruzov (Rəvan Novruzov / Revan Novruzov) — Bursa Uludağ Üniversitesi Bilgisayar Mühendisliği öğrencisi. Siber güvenlik, ağ teknolojileri ve web geliştirme alanlarında projeler geliştiriyor.",
+    "Ravan Novruzov (Rəvan Novruzov / Revan Novruzov) — Bursa Uludağ Üniversitesi Bilgisayar Mühendisliği öğrencisi. Siber güvenlik, ağ teknolojileri ve sistem mimarisi alanlarında projeler geliştiriyor.",
   keywords: [
     "Ravan Novruzov",
     "Rəvan Novruzov",
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     "Siber Güvenlik",
     "Kibertəhlükəsizlik",
     "Ağ Teknolojileri",
-    "Web Geliştirici",
+    "Sistem Mimarisi",
     "Bursa Uludağ Üniversitesi",
     "Yazılım Mühendisi",
   ],
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Ravan Novruzov (Rəvan Novruzov) | Bilgisayar Mühendisi",
     description:
-      "Ravan Novruzov (Rəvan Novruzov / Revan Novruzov) — Bursa Uludağ Üniversitesi Bilgisayar Mühendisliği öğrencisi. Siber güvenlik, ağ teknolojileri ve web geliştirme.",
+      "Ravan Novruzov (Rəvan Novruzov / Revan Novruzov) — Bursa Uludağ Üniversitesi Bilgisayar Mühendisliği öğrencisi. Siber güvenlik, ağ teknolojileri ve sistem mimarisi.",
     url: "https://www.ravannovruzov.me",
     siteName: "Ravan Novruzov",
     locale: "tr_TR",
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
     type: "website",
   },
   twitter: {
-    card: "summary",
+    card: "summary_large_image",
     title: "Ravan Novruzov (Rəvan Novruzov) | Bilgisayar Mühendisi",
     description:
       "Ravan Novruzov — Bursa Uludağ Üniversitesi Bilgisayar Mühendisliği öğrencisi.",
@@ -74,10 +74,9 @@ const personJsonLd = {
   knowsAbout: [
     "Siber Güvenlik",
     "Ağ Teknolojileri",
-    "Web Geliştirme",
-    "Next.js",
-    "React",
-    "TypeScript",
+    "Sistem Mimarisi",
+    "Penetrasyon Testi",
+    "Active Directory",
   ],
   alumniOf: {
     "@type": "CollegeOrUniversity",

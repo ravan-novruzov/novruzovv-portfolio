@@ -50,10 +50,10 @@ export default function About() {
                 oradan da ağ mimarisi, sistem güvenliği ve yazılım geliştirme dünyasına taşıdı.
               </p>
               <p className="text-lg leading-relaxed text-secondary">
-                Bugün, bulut altyapılarından güvenlik protokollerine, full-stack web
-                uygulamalarından kurumsal ağ topolojilerine kadar geniş bir yelpazede
-                projeler geliştiriyorum. Her projede &ldquo;gerçek dünya problemine gerçek
-                çözüm&rdquo; ilkesiyle hareket ediyorum.
+                Bugün, güvenlik protokollerinden kurumsal ağ topolojilerine,
+                sistem mimarisinden yazılım projelerine kadar farklı alanlarda
+                kendimi geliştiriyorum. Her projede &ldquo;gerçek dünya problemine
+                gerçek çözüm&rdquo; ilkesiyle hareket ediyorum.
               </p>
               <p className="text-lg leading-relaxed text-secondary">
                 Topluluk çalışmalarına aktif katkıda bulunarak, bilgiyi paylaşmanın
