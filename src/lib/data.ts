@@ -236,40 +236,6 @@ export const communityEvents: CommunityEvent[] = [
     linkedin: "https://www.linkedin.com/feed/update/urn:li:activity:7444402547466964992/",
   },
   {
-    title: "UYT Case Study Eğitimi 📚",
-    date: "31 Ekim 2025",
-    description:
-      "🎓 Uludağ Yazılım Topluluğu olarak ilk Case Study Eğitimimizi gerçekleştirdik! Gerçek dünya problemlerini analiz ettiğimiz bu eğitimde üyelerimizle birlikte değerli deneyimler edindik.",
-    images: [
-      "/images/events/CaseStudy1.jpg",
-      "/images/events/CaseStudy2.jpg",
-      "/images/events/CaseStudy3.jpg",
-      "/images/events/CaseStudy4.jpg",
-      "/images/events/CaseStudy5.jpg",
-      "/images/events/CaseStudy6.jpg",
-    ],
-    linkedin: "https://www.linkedin.com/feed/update/urn:li:activity:7391006331861766144/",
-  },
-  {
-    title: "IDEA CAMP — Fikir Üretenler Kampı! 🏕️",
-    date: "8 Kasım 2025",
-    description:
-      "Uludağ Yazılım Topluluğu olarak bu dönem düzenlediğimiz IdeaCamp etkinliğinde; 2 gece 3 gün boyunca teknoloji, inovasyon ve yaratıcılığı aynı çatı altında buluşturduk! 🌿💻",
-    images: [
-      "/images/events/camp1.jpg",
-      "/images/events/camp2.jpg",
-      "/images/events/camp3.jpg",
-      "/images/events/camp4.jpg",
-      "/images/events/camp5.jpg",
-      "/images/events/camp6.jpg",
-      "/images/events/camp7.jpg",
-      "/images/events/camp8.jpg",
-      "/images/events/camp9.jpg",
-      "/images/events/camp10.jpg",
-    ],
-    linkedin: "https://www.linkedin.com/posts/uludagdev_ideacamp-uludaafbyazaftlaftmtopluluafbu-ideathon-ugcPost-7394086993691037696-wTiB?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEmDut4BnPFl-UhvRxpAqRt42BqT32OkLgo",
-  },
-  {
     title: "🎙 OpenTalks | Sektör–Öğrenci Buluşması",
     date: "8 Ocak 2026",
     description:
@@ -296,5 +262,51 @@ export const communityEvents: CommunityEvent[] = [
       "/images/events/python3.jpg",
     ],
     linkedin: "https://www.linkedin.com/posts/uludagdev_uluda%C4%9F-yaz%C4%B1l%C4%B1m-toplulu%C4%9Fu-olarak-pycamp-serimizin-ugcPost-7404492834852192256-DsCm?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEmDut4BnPFl-UhvRxpAqRt42BqT32OkLgo",
+  },
+  {
+    title: "🔀 PyCamp | Git ve GitHub Eğitimi",
+    date: "29 Kasım 2025",
+    description:
+      "Uludağ Yazılım Topluluğu olarak PyCamp serimizin ilk oturumunu, Git ve GitHub Eğitimi ile başarıyla tamamladık. Üyelerimizle birlikte sürüm kontrolünün temellerini ve iş birliğine dayalı geliştirme akışlarını uygulamalı olarak işledik.",
+    images: [
+      "/images/events/git1.jpg",
+      "/images/events/git2.jpg",
+      "/images/events/git3.jpg",
+    ],
+    linkedin: "https://www.linkedin.com/posts/uludagdev_pycamp-serimizin-ilk-oturumunu-git-ve-github-ugcPost-7402714354074173441-iKCZ?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEmDut4BnPFl-UhvRxpAqRt42BqT32OkLgo",
+  },
+  {
+    title: "IDEA CAMP — Fikir Üretenler Kampı! 🏕️",
+    date: "8 Kasım 2025",
+    description:
+      "Uludağ Yazılım Topluluğu olarak bu dönem düzenlediğimiz IdeaCamp etkinliğinde; 2 gece 3 gün boyunca teknoloji, inovasyon ve yaratıcılığı aynı çatı altında buluşturduk! 🌿💻",
+    images: [
+      "/images/events/camp1.jpg",
+      "/images/events/camp2.jpg",
+      "/images/events/camp3.jpg",
+      "/images/events/camp4.jpg",
+      "/images/events/camp5.jpg",
+      "/images/events/camp6.jpg",
+      "/images/events/camp7.jpg",
+      "/images/events/camp8.jpg",
+      "/images/events/camp9.jpg",
+      "/images/events/camp10.jpg",
+    ],
+    linkedin: "https://www.linkedin.com/posts/uludagdev_ideacamp-uludaafbyazaftlaftmtopluluafbu-ideathon-ugcPost-7394086993691037696-wTiB?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEmDut4BnPFl-UhvRxpAqRt42BqT32OkLgo",
+  },
+  {
+    title: "UYT Case Study Eğitimi 📚",
+    date: "31 Ekim 2025",
+    description:
+      "🎓 Uludağ Yazılım Topluluğu olarak ilk Case Study Eğitimimizi gerçekleştirdik! Gerçek dünya problemlerini analiz ettiğimiz bu eğitimde üyelerimizle birlikte değerli deneyimler edindik.",
+    images: [
+      "/images/events/CaseStudy1.jpg",
+      "/images/events/CaseStudy2.jpg",
+      "/images/events/CaseStudy3.jpg",
+      "/images/events/CaseStudy4.jpg",
+      "/images/events/CaseStudy5.jpg",
+      "/images/events/CaseStudy6.jpg",
+    ],
+    linkedin: "https://www.linkedin.com/feed/update/urn:li:activity:7391006331861766144/",
   },
 ];
