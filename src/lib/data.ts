@@ -180,7 +180,7 @@ export const achievements: Achievement[] = [
     organization: "Türkiye Satranç Federasyonu & Isparta İl Müdürlüğü",
     date: "16-22 Mayıs 2026",
     description:
-      "35 ilden 220 sporcunun katıldığı YURTLİG Satranç Türkiye Finali'nde Bursa İl Karması olarak takım halinde 2. olduk. Isparta'da düzenlenen turnuvada Genel Kategori'de Trabzon İl Karması'nın ardından gümüş madalya kazandık. Ödül törenine Isparta Vali Yardımcıları ve Gençlik ve Spor İl Müdürü de katıldı.",
+      "YURTLİG Satranç Türkiye Finali'nde Bursa İl Karması olarak takım halinde mücadele ederek Türkiye ikincisi olduk. Isparta'da düzenlenen turnuvada Genel Kategori'de gümüş madalya kazandık. Ödül töreni Isparta Vali Yardımcıları ve Gençlik ve Spor İl Müdürü'nün katılımlarıyla gerçekleşti.",
     team: ["Furkan Efiloğlu", "Arda Burak Budak", "Batu Çokiyi"],
     resultLink: "https://s3.chess-results.com/tnr1417928.aspx?lan=8&SNode=S0",
     images: [
