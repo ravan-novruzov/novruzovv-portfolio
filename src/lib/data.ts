@@ -34,6 +34,7 @@ export interface Achievement {
   description: string;
   team?: string[];
   linkedin?: string;
+  resultLink?: string;
   image?: string;
   images?: string[];
 }
@@ -171,6 +172,22 @@ export const achievements: Achievement[] = [
     team: ["Enes Altunbaş", "Oğuzhan Hekimoğlu"],
     linkedin: "https://www.linkedin.com/feed/update/urn:li:activity:7411801958698737664/",
     image: "/images/achievments/AI_Hackathon.jpg",
+  },
+  {
+    title: "YURTLİG Satranç Türkiye Finali",
+    rank: 2,
+    rankLabel: "2. Sıra",
+    organization: "Türkiye Satranç Federasyonu & Isparta İl Müdürlüğü",
+    date: "16-22 Mayıs 2026",
+    description:
+      "35 ilden 220 sporcunun katıldığı YURTLİG Satranç Türkiye Finali'nde Bursa İl Karması olarak takım halinde 2. olduk. Isparta'da düzenlenen turnuvada Genel Kategori'de Trabzon İl Karması'nın ardından gümüş madalya kazandık. Ödül törenine Isparta Vali Yardımcıları ve Gençlik ve Spor İl Müdürü de katıldı.",
+    team: ["Furkan Efiloğlu", "Arda Burak Budak", "Batu Çokiyi"],
+    resultLink: "https://s3.chess-results.com/tnr1417928.aspx?lan=8&SNode=S0",
+    images: [
+      "/images/achievments/satranc1.jpeg",
+      "/images/achievments/satranc2.jpeg",
+      "/images/achievments/satranc3.jpeg",
+    ],
   },
   {
     title: "\"Benim Dünyam Benim Kütüphanem\" Video Müzik Yarışması",

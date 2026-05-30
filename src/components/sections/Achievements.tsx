@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import { Trophy, Medal, Award, Users, ExternalLink, ChevronLeft, ChevronRight } from "lucide-react";
+import { Trophy, Medal, Award, Users, ExternalLink, ChevronLeft, ChevronRight, BarChart2 } from "lucide-react";
 import { achievements } from "@/lib/data";
 import SectionHeading from "@/components/ui/SectionHeading";
 import ScrollReveal from "@/components/ui/ScrollReveal";
@@ -206,6 +206,19 @@ export default function Achievements() {
                       >
                         LinkedIn&apos;de Gör
                         <ExternalLink className="h-3.5 w-3.5" />
+                      </a>
+                    )}
+
+                    {/* Result link */}
+                    {achievement.resultLink && (
+                      <a
+                        href={achievement.resultLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="mt-5 inline-flex items-center gap-1.5 self-start text-sm font-medium text-primary transition-all hover:gap-2"
+                      >
+                        <BarChart2 className="h-3.5 w-3.5" />
+                        Turnuva Sonuçları
                       </a>
                     )}
                   </div>
