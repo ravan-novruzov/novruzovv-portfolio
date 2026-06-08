@@ -72,7 +72,7 @@ export default function Hero() {
           >
             <Trophy className="h-4 w-4 text-amber-500" />
             <span className="bg-gradient-to-r from-amber-400 to-orange-500 bg-clip-text text-transparent font-semibold">
-              2x Hackathon Ödüllü
+              3x Hackathon Ödüllü
             </span>
           </a>
           <a
