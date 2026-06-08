@@ -174,6 +174,24 @@ export const achievements: Achievement[] = [
     image: "/images/achievments/AI_Hackathon.jpg",
   },
   {
+    title: "Yapay Zeka Hackathonu",
+    rank: 3,
+    rankLabel: "3. Sıra",
+    organization: "TREX & Yapay Zeka Topluluğu",
+    date: "6-7 Haziran 2026",
+    description:
+      "İki gün boyunca yapay zekâ odaklı fikirlerin ve yenilikçi projelerin yarıştığı hackathonda takım olarak 3. olduk. Yoğun çalışma temposunda gerçek problemlere çözüm üretirken bilgi paylaşımı, ekip çalışması ve teknoloji odaklı düşünme becerilerimizi ortaya koyduk.",
+    team: ["Oğuzhan Hekimoğlu", "Suha Tüfekçi"],
+    linkedin: "https://www.linkedin.com/in/ravan-novruzov-8260772a5/",
+    images: [
+      "/images/achievments/trex1.jpeg",
+      "/images/achievments/trex2.jpeg",
+      "/images/achievments/trex4.jpg.jpeg",
+      "/images/achievments/trex3.HEIC",
+      "/images/achievments/trex5.HEIC",
+    ],
+  },
+  {
     title: "YURTLİG Satranç Türkiye Finali",
     rank: 2,
     rankLabel: "2. Sıra",
