@@ -184,11 +184,11 @@ export const achievements: Achievement[] = [
     team: ["Oğuzhan Hekimoğlu", "Suha Tüfekçi"],
     linkedin: "https://www.linkedin.com/in/ravan-novruzov-8260772a5/",
     images: [
-      "/images/achievments/trex1.jpeg",
-      "/images/achievments/trex2.jpeg",
+      "/images/achievments/trex1.jpg",
+      "/images/achievments/trex2.jpg",
+      "/images/achievments/trex3.jpg",
       "/images/achievments/trex4.jpg.jpeg",
-      "/images/achievments/trex3.HEIC",
-      "/images/achievments/trex5.HEIC",
+      "/images/achievments/trex5.jpg",
     ],
   },
   {
